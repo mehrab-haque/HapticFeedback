@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  HapticExperiment
 //
-//  Created by itiw on 30/5/21.
+//  Created by Md. Mehrab haque on 30/5/21.
 //
 
 import SwiftUI
@@ -11,7 +11,9 @@ struct ContentView: View {
     var body: some View {
         VStack{
             Button("Tap"){
-                print("Hi")
+                var hapticManager: HapticManager?
+                hapticManager = HapticManager()
+                hapticManager?.playSlice()
             }
         }
     }
