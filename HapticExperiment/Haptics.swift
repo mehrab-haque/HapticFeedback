@@ -16,6 +16,7 @@ class HapticManager {
     // 3
     let hapticCapability = CHHapticEngine.capabilitiesForHardware()
     guard hapticCapability.supportsHaptics else {
+    print("Not COmpatible")
       return nil
     }
 
