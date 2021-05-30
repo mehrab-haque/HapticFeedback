@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		4134EFC426637D7C0089C88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4134EFC326637D7C0089C88E /* Assets.xcassets */; };
 		4134EFC726637D7C0089C88E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4134EFC626637D7C0089C88E /* Preview Assets.xcassets */; };
 		4134EFD4266381DD0089C88E /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4134EFD3266381DD0089C88E /* Haptics.swift */; };
+		41C14E9826638FC900710D2F /* Haptico in Frameworks */ = {isa = PBXBuildFile; productRef = 41C14E9726638FC900710D2F /* Haptico */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C14E9826638FC900710D2F /* Haptico in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +90,9 @@
 			dependencies = (
 			);
 			name = HapticExperiment;
+			packageProductDependencies = (
+				41C14E9726638FC900710D2F /* Haptico */,
+			);
 			productName = HapticExperiment;
 			productReference = 4134EFBC26637D7B0089C88E /* HapticExperiment.app */;
 			productType = "com.apple.product-type.application";
@@ -115,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 4134EFB326637D7B0089C88E;
+			packageReferences = (
+				41C14E9626638FC900710D2F /* XCRemoteSwiftPackageReference "Haptico" */,
+			);
 			productRefGroup = 4134EFBD26637D7B0089C88E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -332,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41C14E9626638FC900710D2F /* XCRemoteSwiftPackageReference "Haptico" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iSapozhnik/Haptico.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41C14E9726638FC900710D2F /* Haptico */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41C14E9626638FC900710D2F /* XCRemoteSwiftPackageReference "Haptico" */;
+			productName = Haptico;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4134EFB426637D7B0089C88E /* Project object */;
 }
